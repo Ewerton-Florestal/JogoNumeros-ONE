@@ -1,3 +1,4 @@
+/* Reset básico e cores padrão */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,6 +6,7 @@
     color: white;
 }
 
+/* Estilo do corpo da página */
 body {
     background: linear-gradient(#1354A5 0%, #041832 33.33%, #041832 66.67%, #01080E 100%);
     height: 100vh;
@@ -13,7 +15,7 @@ body {
     justify-content: center;
 }
 
-
+/* Fundo com imagem decorativa */
 body::before {
     background-image: url("img/code.png");
     background-repeat: no-repeat;
@@ -26,6 +28,7 @@ body::before {
     opacity: 0.4;
 }
 
+/* Estilo do container principal */
 .container {
     width: 80%;
     height: 80%;
@@ -41,6 +44,7 @@ body::before {
 }
 
 
+/* Estilo do conteúdo principal */
 .container__conteudo {
     display: flex;
     align-items: center;
@@ -48,11 +52,13 @@ body::before {
     bottom: 0;
 }
 
+/* Estilo das informações do jogo */
 .container__informacoes {
     flex: 1;
     padding: 3rem;
 }
 
+/* Estilo dos botões */
 .container__botao {
     border-radius: 16px;
     background: #1875E8;
@@ -64,14 +70,17 @@ body::before {
     margin-top: 2rem;
 }
 
+/* Margem para textos dentro do container */
 .container__texto {
     margin: 16px 0 16px 0;
 }
 
+/* Cor azul para textos específicos */
 .container__texto-azul {
     color: #1875E8;
 }
 
+/* Estilo do campo de entrada */
 .container__input {
     width: 100%;
     height: 72px;
@@ -85,56 +94,67 @@ body::before {
     font-family: 'Inter', sans-serif;
 }
 
+/* Layout dos botões */
 .container__botoes {
     display: flex;
     gap: 2em;
 }
 
+/* Estilo do título */
 h1 {
     font-family: 'Chakra Petch', sans-serif;
     font-size: 72px;
     padding-bottom: 3rem;
 }
 
+/* Fonte padrão para parágrafos e botões */
 p,
 button {
     font-family: 'Inter', sans-serif;
 }
 
+/* Estilo do parágrafo */
 .texto__paragrafo {
     font-size: 32px;
     font-weight: 400;
 }
 
+/* Estilo do botão desabilitado */
 button:disabled {
     background-color: gray;
 }
 
+/* Ajustes para telas menores */
 @media screen and (max-width: 1250px) {
 
+    /* Reduz o tamanho do título */
     h1 {
         font-size: 50px;
     }
 
+    /* Ajusta o tamanho da fonte dos botões */
     .container__botao {
         font-size: 16px;
     }
 
-
+    /* Ajusta o tamanho da fonte do parágrafo */
     .texto__paragrafo {
         font-size: 24px;
     }
 
+    /* Oculta a imagem em telas menores */
     .container__imagem-pessoa {
         display: none;
     }
 
+    /* Ajusta o layout do conteúdo para telas menores */
     .container__conteudo {
         display: block;
         position: inherit;
     }
 
+    /* Ajusta o padding das informações para telas menores */
     .container__informacoes {
-        padding: 1rem
+        padding: 1rem;
     }
 }

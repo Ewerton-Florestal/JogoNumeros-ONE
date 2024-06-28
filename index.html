@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Inclui a biblioteca de voz responsiva -->
     <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+    <!-- Preconecta ao Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
-        rel="stylesheet">
+    <!-- Importa as fontes do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Link para o arquivo de estilo CSS -->
     <link rel="stylesheet" href="style.css">
     <title>JS Game</title>
 </head>
-
 <body>
-
     <div class="container">
         <div class="container__conteudo">
             <div class="container__informacoes">
                 <div class="container__texto">
+                    <!-- Título do jogo será inserido aqui -->
                     <h1></h1>
+                    <!-- Parágrafo para mensagens do jogo -->
                     <p class="texto__paragrafo"></p>
                 </div>
+                <!-- Campo para o usuário inserir o chute -->
                 <input type="number" min="1" max="10" class="container__input">
                 <div class="chute container__botoes">
+                    <!-- Botão para verificar o chute -->
                     <button onclick="verificarChute()" class="container__botao">Chutar</button>
+                    <!-- Botão para iniciar um novo jogo -->
                     <button onclick="reiniciarJogo()" id="reiniciar" class="container__botao" disabled>Novo jogo</button>
                 </div>
             </div>
+            <!-- Imagem decorativa -->
             <img src="./img/ia.png" alt="Uma pessoa olhando para a esquerda" class="container__imagem-pessoa" />
         </div>
     </div>
-
-
-
-
+    <!-- Script do jogo -->
     <script src="app.js" defer></script>
 </body>
-
 </html>
